@@ -10,14 +10,10 @@
     <link href="" rel="stylesheet">
     <link rel=stylesheet type="text/css" href="https://zxbxjx.github.io/src/jacky/jacky.css">
 </head>
-<script>
-    (function(W) {
-        if (/(iphone|nokia|sony|ericsson|mot|samsung|sgh|lg|philips|panasonic|alcatel|lenovo|cldc|midp|wap|mobile)/i.test(navigator.userAgent.toLowerCase())) {
-            W.location = 'https://zxbxjx.github.io/src/jacky/測試/mobile/index.html';
-        } else {
-            W.location = 'https://zxbxjx.github.io/src/jacky/index.html';
-        }
-    })(window);
+<script type="text/javascript">
+    if (navigator.userAgent.match(/Android|iPhone|iPad/i)) {
+        window.location = 'https://zxbxjx.github.io/src/jacky/測試/mobile/index.html';
+    }
 </script>
 <script src="https://zxbxjx.github.io/src/jacky/jacky.js"></script>
 <script type="text/javascript">
