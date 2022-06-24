@@ -3,7 +3,7 @@
 <head>
 </head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,inital-scale=1.0,minimum-scale=0.5,maximum-scale=2.0,user-scalable=no">
 <title>jacky</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -223,6 +223,21 @@
         transition: 1s;
     }
 </style>
+<!--<script>
+    try {
+        var urlhash = window.location.hash;
+        if (!urlhash.match("fromapp")) {
+            if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {
+
+            } else {
+                window.location = "http://shangyecheng.cn/";
+            }
+        }
+    } catch (err) {}
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        WeixinJSBridge.call('hideOptionMenu');
+    });
+</script>-->
 </head>
 <script src="https://zxbxjx.github.io/src/jacky/jacky.js"></script>
 <script type="text/javascript">
@@ -246,8 +261,9 @@
             <center>
                 <div class="aaa"><img src="https://zxasqwedf.github.io/1/IMG_5703.JPG" class="round_icon" alt=""></div>
             </center>
-            <center><img id="image" src="https://zxasqwedf.github.io/3/IMG_5930.JPG" width="100%" height="100%"></center>
+            <center><img id="image" src="https://zxasqwedf.github.io/3/IMG_5930.JPG" width="100%" height="400"></center>
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="搜索..." class="bar">
+
             <ul id="myUL">
                 <li>
                     <div>
