@@ -1,35 +1,35 @@
 <html>
+<SCRIPT LANGUAGE="Javascript">
+    var Words = "%3Cstyle%3E%0A%20%20%20%20/*%20loading%20*/%0A%20%20%20%20%0A%20%20%20%20%23loader-wrapper%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20z-index%3A%20999999%3B%0A%20%20%20%20%20%20%20%20overflow%3A%20hidden%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23loader%20%7B%0A%20%20%20%20%20%20%20%20display%3A%20block%3B%0A%20%20%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20%20%20left%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20top%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20width%3A%20128px%3B%0A%20%20%20%20%20%20%20%20height%3A%20128px%3B%0A%20%20%20%20%20%20%20%20margin%3A%20-64px%200%200%20-64px%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20border%3A%205px%20solid%20transparent%3B%0A%20%20%20%20%20%20%20%20border-top-color%3A%20%234285f4%3B%0A%20%20%20%20%20%20%20%20border-bottom-color%3A%20%234285f4%3B%0A%20%20%20%20%20%20%20%20-webkit-animation%3A%20spin%201s%20linear%20infinite%3B%0A%20%20%20%20%20%20%20%20animation%3A%20spin%201s%20linear%20infinite%3B%0A%20%20%20%20%20%20%20%20z-index%3A%201001%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20@-webkit-keyframes%20spin%20%7B%0A%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20-webkit-transform%3A%20rotate%280deg%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transform%3A%20rotate%280deg%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20-webkit-transform%3A%20rotate%28360deg%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transform%3A%20rotate%28360deg%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20@keyframes%20spin%20%7B%0A%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20-webkit-transform%3A%20rotate%280deg%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transform%3A%20rotate%280deg%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20-webkit-transform%3A%20rotate%28360deg%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transform%3A%20rotate%28360deg%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23loader-wrapper%20.loader-section%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%2051%25%3B%0A%20%20%20%20%20%20%20%20background%3A%20%23f2f2f2%3B%0A%20%20%20%20%20%20%20%20z-index%3A%201000%3B%0A%20%20%20%20%20%20%20%20-webkit-transform%3A%20translateY%280%29%3B%0A%20%20%20%20%20%20%20%20transform%3A%20translateY%280%29%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23loader-wrapper%20.loader-section.section-top%20%7B%0A%20%20%20%20%20%20%20%20top%3A%200%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23loader-wrapper%20.loader-section.section-bottom%20%7B%0A%20%20%20%20%20%20%20%20bottom%3A%200%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20.loaded%20%23loader-wrapper%20.loader-section.section-top%20%7B%0A%20%20%20%20%20%20%20%20-webkit-transform%3A%20translateY%28-100%25%29%3B%0A%20%20%20%20%20%20%20%20transform%3A%20translateY%28-100%25%29%3B%0A%20%20%20%20%20%20%20%20-webkit-transition%3A%20all%20.5s%20cubic-bezier%280.645%2C%200.045%2C%200.355%2C%201.000%29%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%20.5s%20cubic-bezier%280.645%2C%200.045%2C%200.355%2C%201.000%29%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20.loaded%20%23loader-wrapper%20.loader-section.section-bottom%20%7B%0A%20%20%20%20%20%20%20%20-webkit-transform%3A%20translateY%28100%25%29%3B%0A%20%20%20%20%20%20%20%20transform%3A%20translateY%28100%25%29%3B%0A%20%20%20%20%20%20%20%20-webkit-transition%3A%20all%20.5s%20cubic-bezier%280.645%2C%200.045%2C%200.355%2C%201.000%29%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%20.5s%20cubic-bezier%280.645%2C%200.045%2C%200.355%2C%201.000%29%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20.loaded%20%23loader-wrapper%20%7B%0A%20%20%20%20%20%20%20%20visibility%3A%20hidden%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20.loaded%20.loader%20%7B%0A%20%20%20%20%20%20%20%20opacity%3A%200%3B%0A%20%20%20%20%20%20%20%20-webkit-transition%3A%20all%201s%20ease%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%201s%20ease%3B%0A%20%20%20%20%7D%0A%3C/style%3E%0A%3Cdiv%20id%3D%22loader-wrapper%22%3E%0A%20%20%20%20%3Cdiv%20id%3D%22loader%22%3E%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22loader-section%20section-top%22%3E%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22loader-section%20section-bottom%22%3E%3C/div%3E%0A%3C/div%3E%0A%3Cscript%20type%3D%22text/javascript%22%3E%0A%20%20%20%20window.onload%20%3D%20function%28%29%20%7B%0A%20%20%20%20%20%20%20%20document.body.className%20+%3D%20%27%20loaded%27%3B%0A%20%20%20%20%7D%3B%0A%20%20%20%20window.setTimeout%28function%28%29%20%7B%0A%20%20%20%20%20%20%20%20document.body.className%20+%3D%20%27%20loaded%27%3B%0A%20%20%20%20%7D%2C%201500%29%3B%0A%3C/script%3E%0A"
+
+    function SetNewWords() {
+        var NewWords;
+        NewWords = unescape(Words);
+        document.write(NewWords);
+    }
+    SetNewWords();
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript">
+    var Words = "%3Cstyle%3E%0A%20%20%20%20%23btnTop%20%7B%0A%20%20%20%20%20%20%20%20display%3A%20none%3B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20bottom%3A%2020px%3B%0A%20%20%20%20%20%20%20%20right%3A%2030px%3B%0A%20%20%20%20%20%20%20%20z-index%3A%2099%3B%0A%20%20%20%20%20%20%20%20border%3A%20none%3B%0A%20%20%20%20%20%20%20%20outline%3A%20none%3B%0A%20%20%20%20%20%20%20%20background-color%3A%20%239F9F9F%3B%0A%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%20%20%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%20%20%20%20padding%3A%2010px%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%202px%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23btnTop%3Ahover%20%7B%0A%20%20%20%20%20%20%20%20background-color%3A%20%239F9F9F%3B%0A%20%20%20%20%20%20%20%20opacity%3A%200.5%3B%0A%20%20%20%20%7D%0A%3C/style%3E%0A%3Cscript%3E%0A%20%20%20%20//%20%u5F53%u7F51%u9875%u5411%u4E0B%u6ED1%u52A8%2030px%20%u51FA%u73B0%22%u8FD4%u56DE%u9876%u90E8%22%20%u6309%u94AE%0A%20%20%20%20window.onscroll%20%3D%20function%28%29%20%7B%0A%20%20%20%20%20%20%20%20scrollFunction%28%29%0A%20%20%20%20%7D%3B%0A%0A%20%20%20%20function%20scrollFunction%28%29%20%7B%0A%20%20%20%20%20%20%20%20console.log%28121%29%3B%0A%20%20%20%20%20%20%20%20if%20%28document.body.scrollTop%20%3E%2030%20%7C%7C%20document.documentElement.scrollTop%20%3E%2020%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20document.getElementById%28%22btnTop%22%29.style.display%20%3D%20%22block%22%3B%0A%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20document.getElementById%28%22btnTop%22%29.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%0A%20%20%20%20//%20%u70B9%u51FB%u6309%u94AE%uFF0C%u8FD4%u56DE%u9876%u90E8%0A%20%20%20%20function%20returnTop%28%29%20%7B%0A%20%20%20%20%20%20%20%20document.body.scrollTop%20%3D%200%3B%0A%20%20%20%20%20%20%20%20document.documentElement.scrollTop%20%3D%200%3B%0A%20%20%20%20%7D%0A%20%20%20%20%3C/script%3E%0A%3Cdiv%3E%0A%20%20%20%20%3Cbutton%20onclick%3D%22returnTop%28%29%22%20id%3D%22btnTop%22%20title%3D%22%u8FD4%u56DE%u9876%u90E8%22%3E%3Cion-icon%20name%3D%22arrow-up-outline%22%3E%3C/ion-icon%3E%3C/button%3E%0A%3C/div%3E"
+
+    function SetNewWords() {
+        var NewWords;
+        NewWords = unescape(Words);
+        document.write(NewWords);
+    }
+    SetNewWords();
+</SCRIPT>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1.0,minimum-scale=0.5,maximum-scale=2.0,user-scalable=no">
+    <title>jacky</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <link rel=stylesheet type="text/css" href="https://zxbxjx.github.io/src/jacky/mobile/index.css">
 </head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,inital-scale=1.0,minimum-scale=0.5,maximum-scale=2.0,user-scalable=no">
-<title>jacky</title>
-<meta name="description" content="">
-<meta name="keywords" content="">
-<link href="" rel="stylesheet">
-<link rel=stylesheet type="text/css" href="https://zxbxjx.github.io/src/jacky/mobile/index.css">
-<style>
-    #btnTop {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        border: none;
-        outline: none;
-        background-color: #9F9F9F;
-        color: white;
-        cursor: pointer;
-        padding: 10px;
-        border-radius: 2px;
-    }
-    
-    #btnTop:hover {
-        background-color: #9F9F9F;
-        opacity: 0.5;
-    }
-</style>
+
 <script>
     try {
         var urlhash = window.location.hash;
@@ -46,27 +46,6 @@
     });
 </script>
 </head>
-<script>
-    // 当网页向下滑动 30px 出现"返回顶部" 按钮
-    window.onscroll = function() {
-        scrollFunction()
-    };
-
-    function scrollFunction() {
-        console.log(121);
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 20) {
-            document.getElementById("btnTop").style.display = "block";
-        } else {
-            document.getElementById("btnTop").style.display = "none";
-        }
-    }
-
-    // 点击按钮，返回顶部
-    function returnTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
 <script src="https://zxbxjx.github.io/src/jacky/jacky.js"></script>
 <script type="text/javascript">
     $(function() {
@@ -82,14 +61,11 @@
         });
     })
 </script>
-<div>
-    <button onclick="returnTop()" id="btnTop" title="返回顶部"><ion-icon name="arrow-up-outline"></ion-icon></button>
-</div>
+
 
 <body onselectstart="return false">
     <divclass="main_container">
         <SCRIPT LANGUAGE="Javascript">
-            <!--
             var Words = "%3Cheader%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//zxbxjx.github.io/src/jacky/mobile/index.html%22%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22aaa%22%3E%3Cimg%20src%3D%22https%3A//zxasqwedf.github.io/1/IMG_5703.JPG%22%20class%3D%22round_icon%22%20alt%3D%22%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//zxbxjx.github.io/src/jacky/mobile/index.html%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cion-icon%20name%3D%22home-outline%22%20class%3D%22z%22%3E%3C/ion-icon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cion-icon%20name%3D%22search-outline%22%20class%3D%22z%22%3E%3C/ion-icon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cion-icon%20name%3D%22at-outline%22%20class%3D%22z%22%3E%3C/ion-icon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cion-icon%20name%3D%22home-outline%22%20class%3D%22z%22%3E%3C/ion-icon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%3C/header%3E%0A%20%20%20%20%3Csection%20class%3D%22banner%22%3E%3C/section%3E%0A%0A%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20window.addEventListener%28%27scroll%27%2C%20%28%29%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20let%20header%20%3D%20document.querySelector%28%27header%27%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20//%20%u91CD%u8981%u5C6C%u6027%0A%20%20%20%20%20%20%20%20%20%20%20%20header.classList.toggle%28%27sticky%27%2C%20window.scrollY%20%3E%200%29%0A%20%20%20%20%20%20%20%20%7D%29%0A%20%20%20%20%3C/script%3E%0A%0A%20%20%20%20%3Cbody%20onselectstart%3D%22return%20false%22%3E%0A%20%20%20%20%20%20%20%20%3Cdivclass%3D%22main_container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22text%22%20id%3D%22myInput%22%20onkeyup%3D%22myFunction%28%29%22%20placeholder%3D%22%u641C%u7D22...%22%20class%3D%22bar%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20id%3D%22myUL%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%u51FA%u53BB%u770B%u4E00%u4E0B%u65E5%u51FA%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%u4E0B%u8F09%u9023%u7D50%uFF1Ahttps%3A//zxbxjx.github.io/src/jacky/%u4E0B%u8F09/2343242.html%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/jwehkr.jpg%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/kawj.jpg%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/uwe.jpg%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/uwhe.jpg%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E2022/6/23%206%3A48%3A33%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%u8981%u6B7B%u4E86%uFF0C%u6211%u60F3%u4E0A%u5B78%uD83C%uDF92%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxasqwedf.github.io/3/IMG_5934.JPG%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E2022/6/19%209%3A46%3A23%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%u67D0%u6CE2%u5C45%u7136%u8BF7%u559D%u996E%u6599%21%21%21%21%21%21%21%21%21%21%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxasqwedf.github.io/1/IMG_5863.jpg%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E2022/5/28%202%3A18%3A56%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E500%u5143%3F%3F%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxasqwedf.github.io/1/IMG_5218.JPG%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%3Cimg%20src%3D%22https%3A//zxasqwedf.github.io/1/IMG_5216%20Small.jpeg%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%3Cimg%20src%3D%22https%3A//zxasqwedf.github.io/1/IMG_5217.JPG%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E2022/1/23%2012%3A05%3A15%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cscript%20type%3D%22module%22%20src%3D%22https%3A//unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js%22%3E%3C/script%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cscript%20nomodule%20src%3D%22https%3A//unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js%22%3E%3C/script%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EM%201.0.0.0%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ccenter%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfooterclass%3D%22footer%22%3E%u4EE5%u4E0A%u5167%u5BB9%u7981%u6B62%u8F49%u767C%u3001p%u5716%u3001%u4E0B%u8F09%u3001%u590D%u5236%u3001%u622A%u5716%u6216%u622A%u5C4F%2C%u5982%u6709%u767C%u73FE%u53EF%u80FD%u4F1A%u6709%u5211%u4E8B%u8CAC%u4EFB%3C/footer%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/center%3E"
 
             function SetNewWords() {
@@ -98,7 +74,6 @@
                 document.write(NewWords);
             }
             SetNewWords();
-            -->
         </SCRIPT>
         <script language="Javascript">
             document.oncontextmenu = new Function("event.returnValue=false");
