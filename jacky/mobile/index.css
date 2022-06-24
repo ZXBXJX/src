@@ -201,3 +201,26 @@ img {
     width: 20px;
     height: 20px;
 }
+
+
+/* return top */
+
+#btnTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #9F9F9F;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+#btnTop:hover {
+    background-color: #9F9F9F;
+    opacity: 0.5;
+}
