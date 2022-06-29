@@ -2,7 +2,6 @@
 
 <html>
 <SCRIPT LANGUAGE="Javascript">
-    <!--
     var Words = "%3Cstyle%3E%0A%20%20%20%20/*%20loading%20*/%0A%20%20%20%20%0A%20%20%20%20%23loader-wrapper%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20z-index%3A%20999999%3B%0A%20%20%20%20%20%20%20%20overflow%3A%20hidden%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23loader%20%7B%0A%20%20%20%20%20%20%20%20display%3A%20block%3B%0A%20%20%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20%20%20left%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20top%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20width%3A%20128px%3B%0A%20%20%20%20%20%20%20%20height%3A%20128px%3B%0A%20%20%20%20%20%20%20%20margin%3A%20-64px%200%200%20-64px%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20border%3A%205px%20solid%20transparent%3B%0A%20%20%20%20%20%20%20%20border-top-color%3A%20%234285f4%3B%0A%20%20%20%20%20%20%20%20border-bottom-color%3A%20%234285f4%3B%0A%20%20%20%20%20%20%20%20-webkit-animation%3A%20spin%201s%20linear%20infinite%3B%0A%20%20%20%20%20%20%20%20animation%3A%20spin%201s%20linear%20infinite%3B%0A%20%20%20%20%20%20%20%20z-index%3A%201001%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20@-webkit-keyframes%20spin%20%7B%0A%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20-webkit-transform%3A%20rotate%280deg%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transform%3A%20rotate%280deg%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20-webkit-transform%3A%20rotate%28360deg%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transform%3A%20rotate%28360deg%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20@keyframes%20spin%20%7B%0A%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20-webkit-transform%3A%20rotate%280deg%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transform%3A%20rotate%280deg%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20-webkit-transform%3A%20rotate%28360deg%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transform%3A%20rotate%28360deg%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23loader-wrapper%20.loader-section%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%2051%25%3B%0A%20%20%20%20%20%20%20%20background%3A%20%23f2f2f2%3B%0A%20%20%20%20%20%20%20%20z-index%3A%201000%3B%0A%20%20%20%20%20%20%20%20-webkit-transform%3A%20translateY%280%29%3B%0A%20%20%20%20%20%20%20%20transform%3A%20translateY%280%29%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23loader-wrapper%20.loader-section.section-top%20%7B%0A%20%20%20%20%20%20%20%20top%3A%200%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23loader-wrapper%20.loader-section.section-bottom%20%7B%0A%20%20%20%20%20%20%20%20bottom%3A%200%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20.loaded%20%23loader-wrapper%20.loader-section.section-top%20%7B%0A%20%20%20%20%20%20%20%20-webkit-transform%3A%20translateY%28-100%25%29%3B%0A%20%20%20%20%20%20%20%20transform%3A%20translateY%28-100%25%29%3B%0A%20%20%20%20%20%20%20%20-webkit-transition%3A%20all%20.5s%20cubic-bezier%280.645%2C%200.045%2C%200.355%2C%201.000%29%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%20.5s%20cubic-bezier%280.645%2C%200.045%2C%200.355%2C%201.000%29%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20.loaded%20%23loader-wrapper%20.loader-section.section-bottom%20%7B%0A%20%20%20%20%20%20%20%20-webkit-transform%3A%20translateY%28100%25%29%3B%0A%20%20%20%20%20%20%20%20transform%3A%20translateY%28100%25%29%3B%0A%20%20%20%20%20%20%20%20-webkit-transition%3A%20all%20.5s%20cubic-bezier%280.645%2C%200.045%2C%200.355%2C%201.000%29%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%20.5s%20cubic-bezier%280.645%2C%200.045%2C%200.355%2C%201.000%29%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20.loaded%20%23loader-wrapper%20%7B%0A%20%20%20%20%20%20%20%20visibility%3A%20hidden%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20.loaded%20.loader%20%7B%0A%20%20%20%20%20%20%20%20opacity%3A%200%3B%0A%20%20%20%20%20%20%20%20-webkit-transition%3A%20all%201s%20ease%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%201s%20ease%3B%0A%20%20%20%20%7D%0A%3C/style%3E%0A%3Cdiv%20id%3D%22loader-wrapper%22%3E%0A%20%20%20%20%3Cdiv%20id%3D%22loader%22%3E%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22loader-section%20section-top%22%3E%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22loader-section%20section-bottom%22%3E%3C/div%3E%0A%3C/div%3E%0A%3Cscript%20type%3D%22text/javascript%22%3E%0A%20%20%20%20window.onload%20%3D%20function%28%29%20%7B%0A%20%20%20%20%20%20%20%20document.body.className%20+%3D%20%27%20loaded%27%3B%0A%20%20%20%20%7D%3B%0A%20%20%20%20window.setTimeout%28function%28%29%20%7B%0A%20%20%20%20%20%20%20%20document.body.className%20+%3D%20%27%20loaded%27%3B%0A%20%20%20%20%7D%2C%201500%29%3B%0A%3C/script%3E%0A"
 
     function SetNewWords() {
@@ -11,10 +10,8 @@
         document.write(NewWords);
     }
     SetNewWords();
-    -->
 </SCRIPT>
 <SCRIPT LANGUAGE="Javascript">
-    <!--
     var Words = "%3Cstyle%3E%0A%20%20%20%20%23btnTop%20%7B%0A%20%20%20%20%20%20%20%20display%3A%20none%3B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20bottom%3A%2020px%3B%0A%20%20%20%20%20%20%20%20right%3A%2030px%3B%0A%20%20%20%20%20%20%20%20z-index%3A%2099%3B%0A%20%20%20%20%20%20%20%20border%3A%20none%3B%0A%20%20%20%20%20%20%20%20outline%3A%20none%3B%0A%20%20%20%20%20%20%20%20background-color%3A%20%239F9F9F%3B%0A%20%20%20%20%20%20%20%20color%3A%20white%3B%0A%20%20%20%20%20%20%20%20cursor%3A%20pointer%3B%0A%20%20%20%20%20%20%20%20padding%3A%2010px%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%202px%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23btnTop%3Ahover%20%7B%0A%20%20%20%20%20%20%20%20background-color%3A%20%239F9F9F%3B%0A%20%20%20%20%20%20%20%20opacity%3A%200.5%3B%0A%20%20%20%20%7D%0A%3C/style%3E%0A%3Cscript%3E%0A%20%20%20%20//%20%u5F53%u7F51%u9875%u5411%u4E0B%u6ED1%u52A8%2030px%20%u51FA%u73B0%22%u8FD4%u56DE%u9876%u90E8%22%20%u6309%u94AE%0A%20%20%20%20window.onscroll%20%3D%20function%28%29%20%7B%0A%20%20%20%20%20%20%20%20scrollFunction%28%29%0A%20%20%20%20%7D%3B%0A%0A%20%20%20%20function%20scrollFunction%28%29%20%7B%0A%20%20%20%20%20%20%20%20console.log%28121%29%3B%0A%20%20%20%20%20%20%20%20if%20%28document.body.scrollTop%20%3E%2030%20%7C%7C%20document.documentElement.scrollTop%20%3E%2020%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20document.getElementById%28%22btnTop%22%29.style.display%20%3D%20%22block%22%3B%0A%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20document.getElementById%28%22btnTop%22%29.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%0A%20%20%20%20//%20%u70B9%u51FB%u6309%u94AE%uFF0C%u8FD4%u56DE%u9876%u90E8%0A%20%20%20%20function%20returnTop%28%29%20%7B%0A%20%20%20%20%20%20%20%20document.body.scrollTop%20%3D%200%3B%0A%20%20%20%20%20%20%20%20document.documentElement.scrollTop%20%3D%200%3B%0A%20%20%20%20%7D%0A%20%20%20%20%3C/script%3E%0A%3Cdiv%3E%0A%20%20%20%20%3Cbutton%20onclick%3D%22returnTop%28%29%22%20id%3D%22btnTop%22%20title%3D%22%u8FD4%u56DE%u9876%u90E8%22%3E%3Cion-icon%20name%3D%22arrow-up-outline%22%3E%3C/ion-icon%3E%3C/button%3E%0A%3C/div%3E"
 
     function SetNewWords() {
@@ -23,7 +20,6 @@
         document.write(NewWords);
     }
     SetNewWords();
-    -->
 </SCRIPT>
 
 <head>
@@ -36,8 +32,16 @@
     <link rel=stylesheet type="text/css" href="https://zxbxjx.github.io/src/jacky/jacky.css">
 </head>
 <script type="text/javascript">
-    if (navigator.userAgent.match(/Android|iPhone|iPad/i)) {
-        window.location = 'https://zxbxjx.github.io/src/jacky/mobile/index.html';
+    var system = {};
+    var p = navigator.platform;
+    console.log(p)
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    if (system.win || system.mac || system.xll) { //如果是电脑跳转到
+        window.location.href = "https://zxbxjx.github.io/src/jacky/index.html";
+    } else {
+        window.location.href = "https://zxbxjx.github.io/src/jacky/mobile/index.html";
     }
 </script>
 <script src="https://zxbxjx.github.io/src/jacky/jacky.js"></script>
