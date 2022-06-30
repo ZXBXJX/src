@@ -57,6 +57,16 @@ header ul li a {
     transition: 0.5s;
 }
 
+header ul li div {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.5s;
+}
+
 header.sticky .logo,
 header.sticky ul li a {
     color: #000;
@@ -205,22 +215,17 @@ img {
 
 /* return top */
 
-#btnTop {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #9F9F9F;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 2px;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-#btnTop:hover {
-    background-color: #9F9F9F;
-    opacity: 0.5;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
