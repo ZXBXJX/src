@@ -156,6 +156,22 @@
         }
     </style>
 </head>
+<script type="text/javascript">
+    var system = {};
+    var p = navigator.platform;
+    var u = navigator.userAgent;
+
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    if (system.win || system.mac || system.xll) { //如果是PC转 
+        if (u.indexOf('Windows Phone') > -1) { //win手机端
+
+        } else {
+            window.location.href = "https://zxbxjx.github.io/src/jacky/Anti-epidemic.html";
+        }
+    }
+</script>
 <header>
     <a href="https://zxbxjx.github.io/src/jacky/mobile/index.html" class="logo">
         <div class="aaa"><img src="https://zxasqwedf.github.io/1/IMG_5703.JPG" class="round_icon" alt=""></div>
