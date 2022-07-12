@@ -1,5 +1,14 @@
 <html>
-<!--| 製作：ZXBXJX | 更新：2022-07-09 | 创建：2022-04-01 |-->
+<!--| 製作：ZXBXJX | 更新：2022-07-12 | 创建：2022-04-01 |-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1.0,minimum-scale=0.5,maximum-scale=2.0,user-scalable=no">
+    <title>jacky</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <link rel=stylesheet type="text/css" href="http://zxbxjx.github.io/src/jacky/mobile/index.css">
+</head>
 <SCRIPT LANGUAGE="Javascript">
     var Words = "%3Cstyle%3E%0A%20%20%20%20/*%20loading%20*/%0A%20%20%20%20%0A%20%20%20%20%23loader-wrapper%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20z-index%3A%20999999%3B%0A%20%20%20%20%20%20%20%20overflow%3A%20hidden%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23loader%20%7B%0A%20%20%20%20%20%20%20%20display%3A%20block%3B%0A%20%20%20%20%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20%20%20%20%20left%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20top%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20width%3A%20128px%3B%0A%20%20%20%20%20%20%20%20height%3A%20128px%3B%0A%20%20%20%20%20%20%20%20margin%3A%20-64px%200%200%20-64px%3B%0A%20%20%20%20%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20%20%20%20%20border%3A%205px%20solid%20transparent%3B%0A%20%20%20%20%20%20%20%20border-top-color%3A%20%234285f4%3B%0A%20%20%20%20%20%20%20%20border-bottom-color%3A%20%234285f4%3B%0A%20%20%20%20%20%20%20%20-webkit-animation%3A%20spin%201s%20linear%20infinite%3B%0A%20%20%20%20%20%20%20%20animation%3A%20spin%201s%20linear%20infinite%3B%0A%20%20%20%20%20%20%20%20z-index%3A%201001%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20@-webkit-keyframes%20spin%20%7B%0A%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20-webkit-transform%3A%20rotate%280deg%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transform%3A%20rotate%280deg%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20-webkit-transform%3A%20rotate%28360deg%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transform%3A%20rotate%28360deg%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20@keyframes%20spin%20%7B%0A%20%20%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20-webkit-transform%3A%20rotate%280deg%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transform%3A%20rotate%280deg%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20-webkit-transform%3A%20rotate%28360deg%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20transform%3A%20rotate%28360deg%29%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23loader-wrapper%20.loader-section%20%7B%0A%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20height%3A%2051%25%3B%0A%20%20%20%20%20%20%20%20background%3A%20%23f2f2f2%3B%0A%20%20%20%20%20%20%20%20z-index%3A%201000%3B%0A%20%20%20%20%20%20%20%20-webkit-transform%3A%20translateY%280%29%3B%0A%20%20%20%20%20%20%20%20transform%3A%20translateY%280%29%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23loader-wrapper%20.loader-section.section-top%20%7B%0A%20%20%20%20%20%20%20%20top%3A%200%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%23loader-wrapper%20.loader-section.section-bottom%20%7B%0A%20%20%20%20%20%20%20%20bottom%3A%200%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20.loaded%20%23loader-wrapper%20.loader-section.section-top%20%7B%0A%20%20%20%20%20%20%20%20-webkit-transform%3A%20translateY%28-100%25%29%3B%0A%20%20%20%20%20%20%20%20transform%3A%20translateY%28-100%25%29%3B%0A%20%20%20%20%20%20%20%20-webkit-transition%3A%20all%20.5s%20cubic-bezier%280.645%2C%200.045%2C%200.355%2C%201.000%29%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%20.5s%20cubic-bezier%280.645%2C%200.045%2C%200.355%2C%201.000%29%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20.loaded%20%23loader-wrapper%20.loader-section.section-bottom%20%7B%0A%20%20%20%20%20%20%20%20-webkit-transform%3A%20translateY%28100%25%29%3B%0A%20%20%20%20%20%20%20%20transform%3A%20translateY%28100%25%29%3B%0A%20%20%20%20%20%20%20%20-webkit-transition%3A%20all%20.5s%20cubic-bezier%280.645%2C%200.045%2C%200.355%2C%201.000%29%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%20.5s%20cubic-bezier%280.645%2C%200.045%2C%200.355%2C%201.000%29%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20.loaded%20%23loader-wrapper%20%7B%0A%20%20%20%20%20%20%20%20visibility%3A%20hidden%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20.loaded%20.loader%20%7B%0A%20%20%20%20%20%20%20%20opacity%3A%200%3B%0A%20%20%20%20%20%20%20%20-webkit-transition%3A%20all%201s%20ease%3B%0A%20%20%20%20%20%20%20%20transition%3A%20all%201s%20ease%3B%0A%20%20%20%20%7D%0A%3C/style%3E%0A%3Cdiv%20id%3D%22loader-wrapper%22%3E%0A%20%20%20%20%3Cdiv%20id%3D%22loader%22%3E%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22loader-section%20section-top%22%3E%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22loader-section%20section-bottom%22%3E%3C/div%3E%0A%3C/div%3E%0A%3Cscript%20type%3D%22text/javascript%22%3E%0A%20%20%20%20window.onload%20%3D%20function%28%29%20%7B%0A%20%20%20%20%20%20%20%20document.body.className%20+%3D%20%27%20loaded%27%3B%0A%20%20%20%20%7D%3B%0A%20%20%20%20window.setTimeout%28function%28%29%20%7B%0A%20%20%20%20%20%20%20%20document.body.className%20+%3D%20%27%20loaded%27%3B%0A%20%20%20%20%7D%2C%201500%29%3B%0A%3C/script%3E%0A"
 
@@ -24,28 +33,17 @@
     var system = {};
     var p = navigator.platform;
     var u = navigator.userAgent;
-
     system.win = p.indexOf("Win") == 0;
     system.mac = p.indexOf("Mac") == 0;
     system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
     if (system.win || system.mac || system.xll) { //如果是PC转 
         if (u.indexOf('Windows Phone') > -1) { //win手机端
-
         } else {
-            window.location.href = "https://zxbxjx.github.io/src/jacky/index.html";
+            window.location.href = "//zxbxjx.github.io/src/jacky/index.html";
         }
     }
 </script>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,inital-scale=1.0,minimum-scale=0.5,maximum-scale=2.0,user-scalable=no">
-    <title>jacky</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link href="" rel="stylesheet">
-    <link rel=stylesheet type="text/css" href="https://zxbxjx.github.io/src/jacky/mobile/index.css">
-</head>
-<script src="https://zxbxjx.github.io/src/jacky/jacky.js"></script>
+<script src="://zxbxjx.github.io/src/jacky/jacky.js"></script>
 <script type="text/javascript">
     $(function() {
         $('.img').on('click', function() {
@@ -54,31 +52,47 @@
             $('.imgPreview').show()
         });
         $('.imgPreview').on('click', function() {
-
-
             $('.imgPreview').hide()
         });
     })
-</script>
-
-
+</script> 
 <body onselectstart="return false">
     <divclass="main_container">
-        <SCRIPT LANGUAGE="Javascript">
-            var Words = "%3Cheader%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//zxbxjx.github.io/src/jacky/mobile/index.html%22%20class%3D%22logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22aaa%22%3E%3Cimg%20src%3D%22https%3A//zxasqwedf.github.io/1/IMG_5703.JPG%22%20class%3D%22round_icon%22%20alt%3D%22%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//zxbxjx.github.io/src/jacky/mobile/index.html%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cion-icon%20name%3D%22home-outline%22%20class%3D%22z%22%3E%3C/ion-icon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cion-icon%20name%3D%22search-outline%22%20class%3D%22z%22%3E%3C/ion-icon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cion-icon%20name%3D%22at-outline%22%20class%3D%22z%22%3E%3C/ion-icon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//zxbxjx.github.io/src/jacky/mobile/Anti-epidemic.html%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cion-icon%20name%3D%22shield-outline%22%3E%3C/ion-icon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%3C/header%3E%0A%20%20%20%20%3Csection%20class%3D%22banner%22%3E%3C/section%3E%0A%0A%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20window.addEventListener%28%27scroll%27%2C%20%28%29%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20let%20header%20%3D%20document.querySelector%28%27header%27%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20//%20%u91CD%u8981%u5C6C%u6027%0A%20%20%20%20%20%20%20%20%20%20%20%20header.classList.toggle%28%27sticky%27%2C%20window.scrollY%20%3E%200%29%0A%20%20%20%20%20%20%20%20%7D%29%0A%20%20%20%20%3C/script%3E%0A%0A%20%20%20%20%3Cbody%20onselectstart%3D%22return%20false%22%3E%0A%20%20%20%20%20%20%20%20%3Cdivclass%3D%22main_container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22text%22%20id%3D%22myInput%22%20onkeyup%3D%22myFunction%28%29%22%20placeholder%3D%22%u641C%u7D22...%22%20class%3D%22bar%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20id%3D%22myUL%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%u300E%u5927%u795E%u961F%u53CB%u300F%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/WechatIMG20.jpeg%22%20width%3D%22400%22%20height%3D%22150%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/WechatIMG21.jpeg%22%20width%3D%22400%22%20height%3D%22150%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/WechatIMG22.jpeg%22%20width%3D%22400%22%20height%3D%22150%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/WechatIMG23.jpeg%22%20width%3D%22400%22%20height%3D%22150%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/WechatIMG24.jpeg%22%20width%3D%22400%22%20height%3D%22150%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E2022/6/30%2018%3A03%3A00%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%u5361%u5728100%u5C0F%u6642%u7206%u6A5F%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/234567987654.jpeg%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E2022/6/25%2019%3A38%3A04%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%u51FA%u53BB%u770B%u4E00%u4E0B%u65E5%u51FA%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%u4E0B%u8F09%u9023%u7D50%uFF1Ahttps%3A//zxbxjx.github.io/src/jacky/%u4E0B%u8F09/2343242.html%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/jwehkr.jpg%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/kawj.jpg%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/uwe.jpg%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%20%3Cimg%20src%3D%22https%3A//zxbxjx.github.io/src/jacky/%u5716%u7247/uwhe.jpg%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E2022/6/23%206%3A48%3A33%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%u8981%u6B7B%u4E86%uFF0C%u6211%u60F3%u4E0A%u5B78%uD83C%uDF92%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxasqwedf.github.io/3/IMG_5934.JPG%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E2022/6/19%209%3A46%3A23%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%u67D0%u6CE2%u5C45%u7136%u8BF7%u559D%u996E%u6599%21%21%21%21%21%21%21%21%21%21%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxasqwedf.github.io/1/IMG_5863.jpg%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E2022/5/28%202%3A18%3A56%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E500%u5143%3F%3F%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//zxasqwedf.github.io/1/IMG_5218.JPG%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%3Cimg%20src%3D%22https%3A//zxasqwedf.github.io/1/IMG_5216%20Small.jpeg%22%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%3Cimg%20src%3D%22https%3A//zxasqwedf.github.io/1/IMG_5217.JPG%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20width%3D%22150%22%20height%3D%22200%22%20class%3D%22a%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E2022/1/23%2012%3A05%3A15%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cscript%20type%3D%22module%22%20src%3D%22https%3A//unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js%22%3E%3C/script%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cscript%20nomodule%20src%3D%22https%3A//unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js%22%3E%3C/script%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EM%201.1.9.3%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ccenter%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfooterclass%3D%22footer%22%3E%u4EE5%u4E0A%u5167%u5BB9%u7981%u6B62%u8F49%u767C%u3001p%u5716%u3001%u4E0B%u8F09%u3001%u590D%u5236%u3001%u622A%u5716%u6216%u622A%u5C4F%2C%u5982%u6709%u767C%u73FE%u53EF%u80FD%u4F1A%u6709%u5211%u4E8B%u8CAC%u4EFB%3C/footer%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/center%3E"
-
-            function SetNewWords() {
-                var NewWords;
-                NewWords = unescape(Words);
-                document.write(NewWords);
-            }
-            SetNewWords();
-        </SCRIPT>
+        <header>
+            <a href="//zxbxjx.github.io/src/jacky/mobile/index.html" class="logo"><div class="aaa"><img src="https://zxasqwedf.github.io/1/IMG_5703.JPG" class="round_icon" alt=""></div></a>
+            <ul>
+                <li><a href="//zxbxjx.github.io/src/jacky/mobile/index.html"><ion-icon name="home-outline" class="z"></ion-icon></a></li><li><a href="#"><ion-icon name="search-outline" class="z"></ion-icon></a></li><li><a href="#"><ion-icon name="at-outline" class="z"></ion-icon></a></li><li><a href="//zxbxjx.github.io/src/jacky/mobile/Anti-epidemic.html"><ion-icon name="shield-outline"></ion-icon></a></li>
+            </ul>
+        </header>
+        <section class="banner"></section>
+        <script>
+            window.addEventListener('scroll', () => {
+                let header = document.querySelector('header')
+                    // 重要屬性
+                header.classList.toggle('sticky', window.scrollY > 0)
+            })
+        </script>
+        <body onselectstart="return false">
+                <div class="container">
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="搜索..." class="bar">
+                    <ul id="myUL">
+                        <li><div><h4 id="oew"></h4><img src="//zxbxjx.github.io/src/jacky/圖片/WechatIMG20.jpeg" width="400" height="150" class="a"><img src="//zxbxjx.github.io/src/jacky/圖片/WechatIMG21.jpeg" width="400" height="150" class="a"><img src="//zxbxjx.github.io/src/jacky/圖片/WechatIMG22.jpeg" width="400" height="150" class="a"><img src="//zxbxjx.github.io/src/jacky/圖片/WechatIMG23.jpeg" width="400" height="150" class="a"><img src="//zxbxjx.github.io/src/jacky/圖片/WechatIMG24.jpeg" width="400" height="150" class="a"><p id="oewe"></p></div></li>
+                        <li><div><h4 id="pt"></h4><img src="//zxbxjx.github.io/src/jacky/圖片/234567987654.jpeg" width="150" height="200" class="a"><p id="pty"></p></div></li>
+                        <li><div><h4 id="rrp"><br><h4 id="rrq"></h4></h4><img src="//zxbxjx.github.io/src/jacky/圖片/jwehkr.jpg" width="150" height="200" class="a"> <img src="//zxbxjx.github.io/src/jacky/圖片/kawj.jpg" width="150" height="200" class="a"> <img src="//zxbxjx.github.io/src/jacky/圖片/uwe.jpg"width="150" height="200" class="a"> <img src="//zxbxjx.github.io/src/jacky/圖片/uwhe.jpg" width="150" height="200" class="a"><p id="rrb"></p></div></li>
+                        <li><div><h4 id="ma"></h4><img src="//zxasqwedf.github.io/3/IMG_5934.JPG" width="150" height="200" class="a"><p id="mad"></p></div></li>
+                        <li><div><h4 id="pu"></h4><img src="//zxasqwedf.github.io/1/IMG_5863.jpg" width="150" height="200" class="a"><p id="pud"></p></div></li>
+                        <li><div><h4 id="sfd"></h4><img src="//zxasqwedf.github.io/1/IMG_5218.JPG" width="150" height="200" class="a"><img src="//zxasqwedf.github.io/1/IMG_5216 Small.jpeg" width="150" height="200" class="a"><img src="//zxasqwedf.github.io/1/IMG_5217.JPG"width="150" height="200" class="a"><p id="sfde"></p></div></li>
+                    </ul>
+                    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                    <p id="aswqw"></p>
+                    <center>
+                        <footer class="footer">以上內容禁止轉發、p圖、下載、复制、截圖或截屏,如有發現可能会有刑事責任</footer>
+                    </center>
         <script language="Javascript">
             document.oncontextmenu = new Function("event.returnValue=false");
             document.onselectstart = new Function("event.returnValue=false");
         </script>
-
+        <script src="//zxbxjx.github.io/src/jacky/mobile/index.js"></script>
 </body>
-
 </html>
